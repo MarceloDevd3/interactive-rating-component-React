@@ -31,6 +31,11 @@ a {
   text-decoration: none;
 }
 
+body,.App {
+  overflow: hidden;
+ }
+
+
 :root {
   --Red: hsl(0, 100%, 68%);
   --Very-Dark-Blue: hsl(230, 29%, 20%);
@@ -42,7 +47,7 @@ a {
 .bg {
   background-color: var(--Light-Grayish-Blue);
   border-radius: 0px 10px 0px 79px;
-  width: 50%;
+  width: 60%;
   height: 55%;
   position: absolute;
   top: 0;
@@ -101,7 +106,7 @@ ul {
 .navbar-Container {
   display: flex;
   justify-content: space-between;
-  margin: 0.7em 1em;
+  margin: 1.3em 1em;
 }
 
 .navbar-toggle {
@@ -127,7 +132,7 @@ ul {
   background-color: #fff;
   box-shadow: -9px 9px 23px 9px rgba(184,173,173,0.29) ;
   position: relative;
-  left: 20%;
+  left: 10%;
   z-index: 1000000000000;
 }
 
