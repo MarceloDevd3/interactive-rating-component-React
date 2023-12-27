@@ -1,38 +1,382 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.125rem;
+}
+
+
+@keyframes loadingPage {
+
+  0% {
+    opacity: 0%;
+  }
+
+  60% {
+    opacity: 75%;
+  }
+
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --Red: hsl(0, 100%, 68%);
+  --Very-Dark-Blue: hsl(230, 29%, 20%);
+  --Dark-Grayish-Blue: hsl(230, 11%, 40%);
+  --Grayish-Blue: hsl(231, 7%, 65%);
+  --Light-Grayish-Blue: hsl(207, 33%, 95%);
+}
+
+.bg {
+  background-color: var(--Light-Grayish-Blue);
+  border-radius: 0px 10px 0px 79px;
+  width: 50%;
+  height: 55%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+}
+
+.navbar-Container, section {
+  animation: loadingPage 2.5s ease-in;
+}
+
+
+li a {
+  color: var(--Very-Dark-Blue);
+}
+
+li a:active:hover {
+  text-decoration: underline;
+  color: var(--Red);
+}
+
+li,
+a,
+button,
+h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+li,
+a,
+h1 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.4em;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+
+button {
+  position: relative;
+  border: none;
+  outline: none;
+}
+
+ul {
+  list-style: none;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-Container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.7em 1em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-toggle {
+  position: absolute;
+  content: ' ';
+  top: 17%;
+  max-width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-toggle.active {
+  display: none;
+  visibility: hidden;
+}
+
+.navbar-toggle.invisible {
+  display: flex;
+}
+
+.navbar-toggle>ul {
+  width: 330px;
+  height: 250px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: -9px 9px 23px 9px rgba(184,173,173,0.29) ;
+  position: relative;
+  left: 20%;
+  z-index: 1000000000000;
+}
+
+li {
+  padding: 4% 0;
+  letter-spacing: 1px;
+  margin: 2% 0;
+  text-transform: uppercase;
+}
+
+.login {
+  opacity: 0.5;
+}
+
+.Line-Ative {
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+}
+
+.bubble {
+  display: none;
+}
+
+
+.load-Img {
+  position: relative;
+  top: 5%;
+  right: -27%;
+  max-width: 100%;
+  z-index: 1555;
+}
+
+
+section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-shrink: 5;
+  position: relative;
+  top: 0;
 }
 
-.App-link {
-  color: #61dafb;
+section .header {
+  margin: 6rem 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.header .new {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.new .new-bubble>span {
+  margin-right: 2rem;
+  color: #fff;
+  background-color: var(--Very-Dark-Blue);
+  padding: 0.5rem;
+  border-radius: 25px;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+
+.upper {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.9em;
+}
+
+.main-zone>p {
+  width: 75%;
+  padding-bottom: 0.7em;
+}
+
+.row {
+  margin: 1rem 0 0 0;
+}
+
+.row>.btn+.btn {
+  margin: 0 1rem 0 1em;
+}
+
+.red-btn {
+  background-color: var(--Red);
+}
+
+.red-btn:hover {
+  background-color: #f27474;
+}
+
+.noColor-btn {
+  background-color: transparent;
+}
+
+.btn {
+  padding: 1rem;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 4px;
+  color:var(--Dark-Grayish-Blue);
+  letter-spacing: 2px;
+}
+
+@media (min-width: 778px) {
+  body,.App {
+    overflow: hidden;
+   }
+
+
+  .navbar-Container {
+    display: flex;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar-toggle,
+  .toogle-display {
+    display: none;
   }
+
+  .navbar-Container {
+    margin: 3.5% 10%;
+  }
+
+  .navbar-Container>ul {
+    margin-right: 5%;
+    background-color: transparent;
+  }
+
+  
+
+  .navbar-toggle {
+    position: relative;
+    content: ' ';
+    top: 0%;
+
+  }
+
+
+  ul {
+    text-align: left;
+    display: flex;
+  }
+
+  .Line-Ative {
+    display: none;
+  }
+
+  .bubble {
+    display: flex;
+    position: relative;
+    top: -4rem;
+    font-size: 5rem;
+    color: gray;
+    opacity: 0.5;
+  }
+
+  .navbar-toggle>ul {
+    background-color: transparent;
+    box-shadow: -9px 9px 23px 9px transparent;
+    z-index: 122;
+    margin-left: -15%;
+  }
+
+  li {
+    padding: 4% 0;
+    margin: -1.5% 4%;
+  }
+
+
+  .load-Img {
+    top: 3rem;
+    right: -22.7%;
+    max-width: 100%;
+    transform: scale(1.2);
+  }
+
+  
+
+
+  .navbar-toggle.active,
+  .navbar-toggle.invisible {
+    display: flex;
+    visibility: visible;
+  }
+
+  section {
+    flex-direction: row-reverse;
+    top: -10rem;
+  }
+
+  section .header {
+    margin: 2rem 7rem;
+  }
+
+
+  h1 {
+    width: 80%;
+  }
+
+
+}
+@media (min-width: 1440px) {
+  section {
+    justify-content: space-around;
+  }
+
+  .navbar-toggle>ul {
+    margin-left: 0;
+    margin-right:7rem;
+  }
+
+  li {
+    padding: 4% 0;
+    margin: -1.5% 7%;
+  }
+
+ section .header {
+  margin: 2rem 1rem 5rem 7.7rem;
+  position: relative;
+  left: 5rem;
+}
+  .load-Img {
+    position: relative;
+    top: 20%;
+    right: 0;
+    left:8rem;
+   transform: scale(1.3);
+  }
+  
+  .bg {
+    width: 47%;
+    height: 45%;
+    position: absolute;
+    top: 0;
+    right: 0 ;
+  }
+
+  h1 {
+    font-size: 3em;
+    width: 90%;
+  }
+
+  .navbar-Container {
+    margin: 3.5% 17%;
+  }
+
+
+  /* 
+   terminar de reparar todos os bugs do projeto
+  */
+
 }
