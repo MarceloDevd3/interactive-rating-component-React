@@ -32,7 +32,7 @@ a {
 }
 
 body,.App {
-  overflow: hidden;
+  overflow-x: hidden;
  }
 
 
@@ -176,7 +176,7 @@ section {
 }
 
 section .header {
-  margin: 6rem 2rem;
+  margin: 7rem 2rem;
 }
 
 
@@ -199,7 +199,7 @@ section .header {
 .upper {
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 0.9em;
+  font-size: 0.7em;
 }
 
 .main-zone>p {
