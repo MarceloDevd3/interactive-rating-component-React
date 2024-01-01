@@ -12,11 +12,11 @@ export default function LoadingPage() {
         <article className='header'>
           <div className='new'>
              <div className='new-bubble'><span>New</span></div>
-             <p><span className='upper'>Monograph Dashboard</span></p>
+             <p><span className='upper gray'>Monograph Dashboard</span></p>
           </div>
           <div className='main-zone'>
           <h1> Powerful insights into your team</h1>
-          <p>Project planning and time tracking for agile teams</p>
+          <p id='limete' className='gray'>Project planning and time tracking for agile teams</p>
           <div className='row'>
             <button className='red-btn btn'>Schedule a demo</button>
             <button className='noColor-btn btn'>to see a live preview</button>

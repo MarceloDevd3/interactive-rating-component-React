@@ -92,6 +92,10 @@ h1 {
   margin-bottom: 0.5em;
 }
 
+.gray {
+  color: var(--Grayish-Blue);
+}
+
 button {
   position: relative;
   border: none;
@@ -132,7 +136,7 @@ ul {
   background-color: #fff;
   box-shadow: -9px 9px 23px 9px rgba(184,173,173,0.29) ;
   position: relative;
-  left: 10%;
+  left: 15%;
   z-index: 1000000000000;
 }
 
@@ -208,7 +212,10 @@ section .header {
 }
 
 .row {
-  margin: 1rem 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 4;
+  margin: 2rem 0 0 0;
 }
 
 .row>.btn+.btn {
@@ -237,151 +244,3 @@ section .header {
   letter-spacing: 2px;
 }
 
-@media (min-width: 778px) {
-  body,.App {
-    overflow: hidden;
-   }
-
-
-  .navbar-Container {
-    display: flex;
-  }
-
-  .navbar-toggle,
-  .toogle-display {
-    display: none;
-  }
-
-  .navbar-Container {
-    margin: 3.5% 10%;
-  }
-
-  .navbar-Container>ul {
-    margin-right: 5%;
-    background-color: transparent;
-  }
-
-  
-
-  .navbar-toggle {
-    position: relative;
-    content: ' ';
-    top: 0%;
-
-  }
-
-
-  ul {
-    text-align: left;
-    display: flex;
-  }
-
-  .Line-Ative {
-    display: none;
-  }
-
-  .bubble {
-    display: flex;
-    position: relative;
-    top: -4rem;
-    font-size: 5rem;
-    color: gray;
-    opacity: 0.5;
-  }
-
-  .navbar-toggle>ul {
-    background-color: transparent;
-    box-shadow: -9px 9px 23px 9px transparent;
-    z-index: 122;
-    margin-left: -15%;
-  }
-
-  li {
-    padding: 4% 0;
-    margin: -1.5% 4%;
-  }
-
-
-  .load-Img {
-    top: 3rem;
-    right: -22.7%;
-    max-width: 100%;
-    transform: scale(1.2);
-  }
-
-  
-
-
-  .navbar-toggle.active,
-  .navbar-toggle.invisible {
-    display: flex;
-    visibility: visible;
-  }
-
-  section {
-    flex-direction: row-reverse;
-    top: -10rem;
-  }
-
-  section .header {
-    margin: 2rem 7rem;
-  }
-
-
-  h1 {
-    width: 80%;
-  }
-
-
-}
-@media (min-width: 1440px) {
-  section {
-    justify-content: space-around;
-  }
-
-  .navbar-toggle>ul {
-    margin-left: 0;
-    margin-right:7rem;
-  }
-
-  li {
-    padding: 4% 0;
-    margin: -1.5% 7%;
-  }
-
- section .header {
-  margin: 2rem 1rem 5rem 7.7rem;
-  position: relative;
-  left: 5rem;
-}
-  .load-Img {
-    position: relative;
-    top: 20%;
-    right: 0;
-    left:8rem;
-   transform: scale(1.3);
-  }
-  
-  .bg {
-    width: 47%;
-    height: 45%;
-    position: absolute;
-    top: 0;
-    right: 0 ;
-  }
-
-  h1 {
-    font-size: 3em;
-    width: 90%;
-  }
-
-  .navbar-Container {
-    margin: 3.5% 17%;
-  }
-
-
-  /* 
-   terminar de reparar todos os bugs do projeto
-  */
-
-}
