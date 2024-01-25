@@ -220,3 +220,11 @@ body #first-Card, #second-Card {
 }
 
 }
+
+@media (min-width: 1440px) {
+  body #first-Card, #second-Card {
+    position: relative;
+    top: 23em;
+  }
+}
+
