@@ -1,246 +1,222 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 1.125rem;
-}
-
-
-@keyframes loadingPage {
-
-  0% {
-    opacity: 0%;
-  }
-
-  60% {
-    opacity: 75%;
-  }
-
-
-  100% {
-    opacity: 100%;
-  }
-}
-
-
-a {
-  text-decoration: none;
-}
-
-body,.App {
-  overflow-x: hidden;
- }
-
-
-:root {
-  --Red: hsl(0, 100%, 68%);
-  --Very-Dark-Blue: hsl(230, 29%, 20%);
-  --Dark-Grayish-Blue: hsl(230, 11%, 40%);
-  --Grayish-Blue: hsl(231, 7%, 65%);
-  --Light-Grayish-Blue: hsl(207, 33%, 95%);
-}
-
-.bg {
-  background-color: var(--Light-Grayish-Blue);
-  border-radius: 0px 10px 0px 79px;
-  width: 60%;
-  height: 55%;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-body {
-  font-family: 'Barlow', sans-serif;
-}
-
-.navbar-Container, section {
-  animation: loadingPage 2.5s ease-in;
-}
-
-
-li a {
-  color: var(--Very-Dark-Blue);
-}
-
-li a:active:hover {
-  text-decoration: underline;
-  color: var(--Red);
-}
-
-li,
-a,
-button,
-h1 {
-  font-family: 'Barlow Condensed', sans-serif;
-}
-
-li,
-a,
-h1 {
-  font-weight: 700;
-}
-
-h1 {
-  font-size: 2.4em;
-  font-weight: bolder;
-  text-transform: uppercase;
-  margin-bottom: 0.5em;
-}
-
-.gray {
-  color: var(--Grayish-Blue);
+  font-size: 0.9375em;
+  font-family: 'Overpass', sans-serif;
 }
 
 button {
-  position: relative;
   border: none;
-  outline: none;
+  font-size: 1.2em;
+  cursor: pointer;
 }
 
-ul {
-  list-style: none;
-  text-align: center;
+:root {
+--Orange: hsl(25, 97%, 53%);
+--White: hsl(0, 0%, 100%);
+--Light-Grey: hsl(217, 12%, 63%);
+--Medium-Grey: hsl(216, 12%, 54%);
+--Dark-Blue: hsl(213, 19%, 18%);
+--Very-Dark-Blue: hsl(216, 12%, 8%);
 }
 
-.navbar-Container {
-  display: flex;
-  justify-content: space-between;
-  margin: 1.3em 1em;
-}
+@keyframes clickOp {
+  from {
+    opacity: 0.5;
+  }
 
-.navbar-toggle {
-  position: absolute;
-  content: ' ';
-  top: 17%;
-  max-width: 100%;
-}
-
-.navbar-toggle.active {
-  display: none;
-  visibility: hidden;
-}
-
-.navbar-toggle.invisible {
-  display: flex;
-}
-
-.navbar-toggle>ul {
-  width: 330px;
-  height: 250px;
-  padding: 10px;
-  background-color: #fff;
-  box-shadow: -9px 9px 23px 9px rgba(184,173,173,0.29) ;
-  position: relative;
-  left: 15%;
-  z-index: 1000000000000;
-}
-
-li {
-  padding: 4% 0;
-  letter-spacing: 1px;
-  margin: 2% 0;
-  text-transform: uppercase;
-}
-
-.login {
-  opacity: 0.5;
-}
-
-.Line-Ative {
-  width: 100%;
-  height: 1px;
-  background-color: gray;
-}
-
-.bubble {
-  display: none;
+  to {
+    opacity: 1;
+  }
 }
 
 
-.load-Img {
-  position: relative;
-  top: 5%;
-  right: -27%;
-  max-width: 100%;
-  z-index: 1555;
-}
-
-
-section {
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 5;
-  position: relative;
-  top: 0;
-}
-
-section .header {
-  margin: 7rem 2rem;
-}
-
-
-.header .new {
-  display: flex;
-  margin-bottom: 1rem;
-}
-
-.new .new-bubble>span {
-  margin-right: 2rem;
-  color: #fff;
+body {
   background-color: var(--Very-Dark-Blue);
-  padding: 0.5rem;
-  border-radius: 25px;
-  font-size: 0.7rem;
-  font-weight: 700;
 }
 
-
-.upper {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 0.7em;
+body #first-Card, #second-Card {
+  margin:  0 auto;
+  position: relative;
+  top: 10em;
+  border-radius: 14px;
 }
 
-.main-zone>p {
-  width: 75%;
-  padding-bottom: 0.7em;
+h1, h2 {
+  color: var(--White);
 }
 
-.row {
+#first-Card, #second-Card {
+  width: 331px;
+  height:358px;
+  background-color:var(--Dark-Blue) ;
+}
+
+#star .star-icon{
+  width: 15px;
+  height: 15px;
+}
+
+#first-Card  #star{
   display: flex;
-  flex-wrap: wrap;
-  flex-shrink: 4;
-  margin: 2rem 0 0 0;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 2px;
+  border-radius: 50%;
+  background-color:#2f363f ;
+  position: absolute;
+  top: 25px;
+  left: 30px;
 }
 
-.row>.btn+.btn {
-  margin: 0 1rem 0 1em;
+.information-box {
+  margin: 25% 0 0 10%;
 }
 
-.red-btn {
-  background-color: var(--Red);
+
+.information-box .star-header {
+  font-size: 2.3em;
+  margin: 0.4em 0;
 }
 
-.red-btn:hover {
-  background-color: #f27474;
+
+.information-box .star-information {
+  font-size: 1.2em;
+  line-height: 17px;
+  width: 89%;
+  margin: 0 0 7% 0;
 }
 
-.noColor-btn {
-  background-color: transparent;
+.information-box .star-information, .thank-you-txt {
+  color: var(--Medium-Grey);
 }
 
-.btn {
-  padding: 1rem;
-  font-size: 0.7em;
+
+.row > button {
+   width: 45px;
+   height: 45px;
+   border-radius: 50px;
+   color: var(--White);
+   background-color: #2f363f;
+}
+
+.row button:hover {
+  background-color: var(--Light-Grey);
+}
+
+.row button:active {
+  background-color: var(--Orange);
+  animation: clickOp  0.1s ease-out;
+}
+
+
+.row > button + button {
+  margin: 0 2%;
+}
+
+.row-line > button {
+  margin: 6% 0;
+  width: 90%;
+  height: 50px;
   text-transform: uppercase;
-  font-weight: 700;
-  border-radius: 4px;
-  color:var(--Dark-Grayish-Blue);
-  letter-spacing: 2px;
+  font-size: 1.5em;
+  border-radius: 25px;
+  background-color: var(--Orange);
+  color: var(--White);
+} 
+
+.row-line button:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+  animation: clickOp  1s ease-in;
 }
 
+#thanks-illustration {
+  position: relative;
+  top: 35px;
+  left: 77px;
+}
+
+#select-bubble  {
+  position: relative;
+  top: -25px;
+  left: 60px;
+  background-color:#333a44;
+  width: 145px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 1.3em;
+  border-radius: 25px;
+}
+
+#select-bubble > p{
+  margin-left: 15px;
+  color: var(--Orange);
+}
+
+.box-2 {
+  text-align: center;
+  margin-right: 45px;
+}
+
+.result-txt {
+  font-size: 2.4em;
+  margin: 0.2em 0;
+}
+
+.thank-you-txt {
+  font-size: 1.2em; 
+  transform: scale(1.1);
+}
+
+
+@media (min-width: 768px) {
+  
+body #first-Card, #second-Card {
+  border-radius: 25px;
+}
+
+#first-Card, #second-Card {
+  width: 378px;
+  height:381px;
+}
+.row button:first-child {
+  margin-right: 2%;
+}
+
+.row > button + button {
+  margin: 0 3%;
+}
+
+#first-Card  #star{
+  position: absolute;
+  top: 35px;
+}
+
+#thanks-illustration {
+  position: relative;
+  top: 35px;
+  left: 100px;
+}
+
+#select-bubble  {
+  top: -35px;
+  left: 75px;
+}
+
+.result-txt {
+  padding-bottom: 0.4em ;
+}
+
+.box-2 .result-txt, .thank-you-txt{
+  margin: 0 2em;
+}
+
+}

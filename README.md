@@ -1,6 +1,6 @@
-# Frontend Mentor - Project tracking intro component
+# Frontend Mentor - Interactive rating component
 
-![Design preview for the Project tracking intro component coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
 
@@ -12,15 +12,16 @@ Thanks for checking out this front-end coding challenge.
 
 ## The challenge
 
-Your challenge is to build out this intro component and get it looking as close to the design as possible.
+Your challenge is to build out this interactive rating component and get it looking as close to the design as possible.
 
 You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
 Your users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size
+- View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
-- Create the background shape using code
+- Select and submit a number rating
+- See the "Thank you" card state after submitting a rating
 
 Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
 
